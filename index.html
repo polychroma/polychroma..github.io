@@ -23,22 +23,25 @@
       <audio id="yeah!" src = "yeah!.mp3" preload="auto"></audio>
       <audio id="pirlosinghorn" src = "pirlosinghorn.mp3" preload="auto"></audio>
       <audio id="inceptionbutton" src = "inceptionbutton.mp3" preload="auto"></audio>
+      <audio id="sadtrombone" src = "sadtrombone.mp3" preload="auto"></audio>
+      <audio id="xfiles" src = "xfiles.mp3" preload="auto"></audio>
 
     <div id="main-container">
 
-      <button onClick = "toggleNightMode()" id= togBut>Toggle Night Mode</button>
 
-      <div id="sitcom-buttons">
-        <button type="button" onclick="document.getElementById('seinfeldfunkyriff').play()">Seinfeld Segue</button>
-        <button type="button" onclick="document.getElementById('laughnclap').play()">Audience Laughs & Claps</button>
-      </div>
+      <button onClick = "toggleNightMode()" id=togBut>Toggle Night Mode</button>
 
-      <div id="misc-buttons">
-        <button type="button" onclick="document.getElementById('yeah!').play()">YEAH!</button>
-        <button type="button" onclick="document.getElementById('pirlosinghorn').play()">Price is Right Losing Horn</button>
-        <button type="button" onclick="document.getElementById('inceptionbutton').play()">Inception BRAUM!</button>
-        <button type="button" onclick="document.getElementById('mlgairhorn').play()">MLG Airhorn</button>
-      </div>
+      <div id="button-container">
+
+        <img src="xfiles.jpg" onclick="document.getElementById('xfiles').play()">
+        <img src="laughingaudience.jpg" onclick="document.getElementById('laughnclap').play()">
+        <img src="seinfeld.jpg" onclick="document.getElementById('seinfeldfunkyriff').play()">
+        <img src="sad-trombone.png" onclick="document.getElementById('sadtrombone').play()">
+        <img src="inception.jpg" onclick="document.getElementById('inceptionbutton').play()">
+        <img src="priceisrightfail.jpg" onclick="document.getElementById('pirlosinghorn').play()">
+        <img src="airhorn.png" onclick="document.getElementById('mlgairhorn').play()">
+        <img src="yeah.jpg" onclick="document.getElementById('yeah!').play()">
+     </div>
 
     </div>
   
