@@ -17,30 +17,93 @@
   </head>
   <body>
 
-      <audio id="seinfeldfunkyriff" src = "seinfeldfunkyriff.mp3" preload="auto"></audio>
-      <audio id="laughnclap" src = "laughnclap.mp3" preload="auto"></audio>
-      <audio id="mlgairhorn" src = "MLGairhorn.mp3" preload="auto"></audio>
-      <audio id="yeah!" src = "yeah!.mp3" preload="auto"></audio>
-      <audio id="pirlosinghorn" src = "pirlosinghorn.mp3" preload="auto"></audio>
-      <audio id="inceptionbutton" src = "inceptionbutton.mp3" preload="auto"></audio>
-      <audio id="sadtrombone" src = "sadtrombone.mp3" preload="auto"></audio>
-      <audio id="xfiles" src = "xfiles.mp3" preload="auto"></audio>
+      <audio id="seinfeldfunkyriff" src = "sound/seinfeldfunkyriff.mp3" preload="auto"></audio>
+      <audio id="laughnclap" src = "sound/laughnclap.mp3" preload="auto"></audio>
+      <audio id="mlgairhorn" src = "sound/MLGairhorn.mp3" preload="auto"></audio>
+      <audio id="yeah!" src = "sound/yeah!.mp3" preload="auto"></audio>
+      <audio id="pirlosinghorn" src = "sound/pirlosinghorn.mp3" preload="auto"></audio>
+      <audio id="inceptionbutton" src = "sound/inceptionbutton.mp3" preload="auto"></audio>
+      <audio id="sadtrombone" src = "sound/sadtrombone.mp3" preload="auto"></audio>
+      <audio id="xfiles" src = "sound/xfiles.mp3" preload="auto"></audio>
+      <audio id="bitconnect1" src = "sound/bitconnect1.mp3" preload="auto"></audio>
+      <audio id="bitconnect2" src = "sound/bitconnect2.mp3" preload="auto"></audio>
+      <audio id="whatamigonnado" src = "sound/whatamigonnado.mp3" preload="auto"></audio>
+      <audio id="hhh" src = "sound/hhh.mp3" preload="auto"></audio>
+      <audio id="jokedrum" src = "sound/joke_drum_effect.mp3" preload="auto"></audio>
+
+    <h1>Simple Soundboard</h1>
 
     <div id="main-container">
 
-
-      <button onClick = "toggleNightMode()" id=togBut>Toggle Night Mode</button>
+      <!--<button onClick = "toggleNightMode()" id=togBut>Toggle Night Mode</button> -->
 
       <div id="button-container">
 
-        <img src="xfiles.jpg" onclick="document.getElementById('xfiles').play()">
-        <img src="laughingaudience.jpg" onclick="document.getElementById('laughnclap').play()">
-        <img src="seinfeld.jpg" onclick="document.getElementById('seinfeldfunkyriff').play()">
-        <img src="sad-trombone.png" onclick="document.getElementById('sadtrombone').play()">
-        <img src="inception.jpg" onclick="document.getElementById('inceptionbutton').play()">
-        <img src="priceisrightfail.jpg" onclick="document.getElementById('pirlosinghorn').play()">
-        <img src="airhorn.png" onclick="document.getElementById('mlgairhorn').play()">
-        <img src="yeah.jpg" onclick="document.getElementById('yeah!').play()">
+        <div class="buttons" onclick="document.getElementById('laughnclap').play()">
+          <img src="img/laughingaudience.jpg">
+          <p>Laugh Track</p>
+        </div>
+
+        <div class="buttons" onclick="document.getElementById('jokedrum').play()">
+          <img src="img/tenor.gif">
+          <p>Ba-Dum Tsss</p>
+         </div>
+
+        <div class="buttons" onclick="document.getElementById('sadtrombone').play()">
+          <img src="img/sad-trombone.png">
+          <p>Sad Trombone</p>
+        </div>
+        
+        <div class="buttons" onclick="document.getElementById('pirlosinghorn').play()">
+          <img src="img/priceisrightfail.jpg">
+          <p>TPiR Loss</p>
+        </div>
+
+        <div class="buttons" onclick="document.getElementById('seinfeldfunkyriff').play()">
+          <img src="img/seinfeld.jpg">
+          <p>Seinfeld Riff</p>
+        </div>
+
+        <div class="buttons" onclick="document.getElementById('xfiles').play()">
+          <img src="img/xfiles.jpg">
+          <p>X-Files Theme</p>
+        </div>
+
+        <div class="buttons" onclick="document.getElementById('inceptionbutton').play()">
+          <img src="img/inception.jpg">
+          <p>Inception BRAUM!</p>
+        </div>
+
+        <div class="buttons" onclick="document.getElementById('mlgairhorn').play()">
+          <img src="img/airhorn.png">
+          <p>MLG Airhorn</p>
+        </div>
+
+        <div class="buttons" onclick="document.getElementById('yeah!').play()">
+          <img src="img/yeah.jpg">
+          <p>CSI Miami Yeah!</p>
+        </div>
+
+        <div class="buttons" onclick="document.getElementById('bitconnect1').play()">
+          <img src="img/bitconnect.gif">
+          <p>BITCONNECT! 1</p>
+        </div>
+
+        <div class="buttons" onclick="document.getElementById('bitconnect2').play()">
+          <img src="img/bitconnect.gif">
+          <p>BITCONNECT! 2</p>
+        </div>
+    
+        <div class="buttons" onclick="document.getElementById('whatamigonnado').play()">
+          <img src="img/bitconnect.gif">
+          <p>WHAT AM I GONNA DO!?</p>
+        </div>
+
+        <div class="buttons" onclick="document.getElementById('hhh').play()">
+          <img src="img/bitconnect.gif">
+          <p>HEY HEY HEYYY</p>
+        </div>
+
      </div>
 
     </div>
