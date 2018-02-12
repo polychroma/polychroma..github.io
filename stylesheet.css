@@ -2,59 +2,86 @@ body {
   background-image: url("img/gradient-wallpaper-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+  text-align: center;
 }
 
-h1 {
-  text-align: center;
-  color: white;
-}
 
 img {
-  width: 150px;
-  height: 150px;
-  border-radius: 150px;
-  border: 2px solid black;
-  }
+  width: 75px;
+  height: 75px;
+  border-radius: 75px;
+  border: 2px solid #160E1B;
+  opacity: .6;
+}
 
 p {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -70%);
   text-align: center;
-  color: white;
   font-weight: bold;
-  font-size: 1.5em;
-  opacity: 0;
+  font-size: 1em;
+  opacity: 1;
   transition: opacity .3s;
 }
 
 #button-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
-  flex-wrap: wrap;
+  flex-flow: wrap;
+  flex-direction: row;
   margin: 50px auto;
   height: 600px;
   width: 100%;
 }
 
+#reaction-container, #tv-and-movie-container, #meme-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-flow: wrap;
+  flex-direction: row;
+  width: 100%;
+  margin: 25px 15px;
+  border: 2px solid #160E1B;
+  border-radius: 25px;
+  box-shadow: .5px .5px #0b0a10;
+}
+
+img {
+  box-shadow: 1px 1px #0b0a10;
+}
+
+span {
+  position: absolute;
+}
+
+div h2{
+  text-align: center;
+  margin-top: -5px;
+  height: 5px;
+  line-height: 5px;
+}
+
 .buttons {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 75px;
+  height: 75px;
   cursor: pointer;
-  margin: 15px;
-  opacity: 1;
+  margin: 10px;
 }
 
 .buttons:hover img {
-  opacity: .4;
+  opacity: 1;
 }
 
 .buttons:hover p {
-  opacity: 1;
+  opacity: 0;
 }
 
 /* #togBut {
